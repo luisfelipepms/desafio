@@ -2,7 +2,7 @@
 
 Endpoints:
 
-url/api/comment/write.php?usuario={1}&post={2}&conteudo='{3}'
+url/api/comment/write.php?usuario={1}&post={2}&conteudo='{3}'<br />
   .1 - id do usuario que comenta
   .2 - id do post
   .3 - conteudo do comentário
