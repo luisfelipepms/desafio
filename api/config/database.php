@@ -4,7 +4,7 @@ class Database{
     private $host = "localhost:3306";
     private $db_name = "desafioesapiens";
     private $username = "root";
-    private $password = "spspmaster2020";
+    private $password = "password";
     public $conn;
   
     public function getConnection(){
