@@ -26,5 +26,18 @@ class Notification{
 
         return $stmt;
     }
+
+    function readOne($user){
+
+        $tempo = 2;
+
+        $query = "SELECT*FROM ".$this->table_name." where receiver_id = $user and date >= DATE_SUB(NOW(), INTERVAL $tempo hour)";
+
+        $stmt = $this->conn->prepare($query);
+
+        $stmt->execute();
+
+        return $stmt;
+    }
 }
 ?>
